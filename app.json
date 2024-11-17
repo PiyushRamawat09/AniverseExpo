@@ -19,7 +19,7 @@
       "infoPlist" : {
         "CFBundleURLTypes" : [
           {
-            "CFBundleURLSchemes" : ["com.googleusercontent.apps.75040607138-96l9bkaelu1l8rp72f8bcmmhfuldk62n"]
+            "CFBundleURLSchemes" : ["clientid"]
           }
         ]
       }
@@ -63,7 +63,7 @@
       [
         "@react-native-google-signin/google-signin",
         {
-          "iosUrlScheme": "com.googleusercontent.apps.75040607138-96l9bkaelu1l8rp72f8bcmmhfuldk62n"
+          "iosUrlScheme": "clientid"
         }
       ]
     ],
@@ -75,7 +75,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "a61472e0-2884-4821-b1ac-33992f89dc62"
+        "projectId": ""
       }
     }
   }
