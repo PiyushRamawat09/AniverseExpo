@@ -1,0 +1,82 @@
+{
+  "expo": {
+    "name": "Aniverse",
+    "slug": "Aniverse",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A1B28"
+    },
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.piyush.aniverse",
+      "infoPlist" : {
+        "CFBundleURLTypes" : [
+          {
+            "CFBundleURLSchemes" : ["com.googleusercontent.apps.75040607138-96l9bkaelu1l8rp72f8bcmmhfuldk62n"]
+          }
+        ]
+      }
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.piyush.aniverse"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./src/assets/images/adaptive-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "react-native-video",
+        {
+          "enableNotificationControls": true,
+          "androidExtensions": {
+            "useExoplayerRtsp": false,
+            "useExoplayerSmoothStreaming": true,
+            "useExoplayerHls": true,
+            "useExoplayerDash": false
+          }
+        }
+      ],
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.75040607138-96l9bkaelu1l8rp72f8bcmmhfuldk62n"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a61472e0-2884-4821-b1ac-33992f89dc62"
+      }
+    }
+  }
+}
